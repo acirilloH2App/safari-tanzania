@@ -396,9 +396,11 @@ button { color: inherit; }
 
 @media (max-width: 980px) {
   body.menu-open .site-header {
-    position: fixed; color: var(--ink); background: var(--paper);
-    border-color: var(--line); backdrop-filter: none;
+    position: fixed; height: 100dvh; color: var(--ink); background: var(--paper);
+    border-color: var(--line); backdrop-filter: none; animation: none; transform: none;
   }
+  body.menu-open .header-inner { height: var(--header); }
+  body.menu-open .nav { position: absolute; }
   .nav-toggle { display: block; }
   .nav {
     position: fixed; inset: var(--header) 0 0; padding: 2rem 1.5rem; display: flex; flex-direction: column;
